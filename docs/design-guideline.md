@@ -14,15 +14,15 @@ Memoria는 사람보다 뛰어난 AGI가 아니라, 사람처럼 배우고 잊�
 
 ```mermaid
 flowchart LR
-    WS["6. 작업공간<br/>경쟁 · 방송"]
-    EYE["1. 눈<br/>호기심 · 학습 진척도 보상"]
-    BRAIN["2. 뇌<br/>기억 연결 · 망각<br/>정원사(수면)"]
-    INT["3. 직관<br/>핀포인트 회상 · 연결 · 판단"]
-    MOUTH["4. 입<br/>출력(말)"]
-    WORLD["세계<br/>행동의 결과 · 예측 오차"]
-    SELF["7. 자기 모델<br/>노드별 확신도"]
+    WS["작업공간<br>경쟁 · 방송"]
+    EYE["눈<br>호기심 · 학습 진척도 보상"]
+    BRAIN["뇌<br>기억 연결 · 망각<br>정원사(수면)"]
+    INT["직관<br>핀포인트 회상 · 연결 · 판단"]
+    MOUTH["입<br>출력(말)"]
+    WORLD["세계<br>행동의 결과 · 예측 오차"]
+    SELF["자기 모델<br>노드별 확신도"]
     EYE --> BRAIN --> INT --> MOUTH --> WORLD
-    WORLD -- "5. 피드백 고리" --> EYE
+    WORLD -- "피드백 고리" --> EYE
     BRAIN --> SELF
     SELF -- "모르는 곳으로" --> EYE
     EYE --> WS
